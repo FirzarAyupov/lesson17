@@ -26,11 +26,10 @@ public class HomeLibrary {
 
         printBookList(bookList);
 
-        mainMenu();
-
         Scanner sc = new Scanner(System.in);
 
         while (true) {
+            mainMenu();
             if (sc.hasNextInt()) {
                 switch (sc.nextInt()) {
                     case 1:
@@ -51,7 +50,6 @@ public class HomeLibrary {
             } else {
                 System.out.println("Введено некорректное значение");
             }
-            mainMenu();
         }
     }
 
